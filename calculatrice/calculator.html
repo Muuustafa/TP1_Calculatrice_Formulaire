@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            font-family: cambria;
+        }
+        td{
+            text-align: center;
+            font-size: 14px;
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .brown{
+            background-color: rgb(151, 138, 131);
+            border: rgb(151, 138, 131);
+        }
+        table{
+            background-color: rgb(62, 59, 59);
+            border: rgb(62, 59, 59);
+        }
+        .mr{
+            background: rgb(120, 122, 123);
+            border: rgb(120, 122, 123);
+        }
+        input{ 
+            border: 2px solid rgb(62, 59, 59);
+            background-color: rgb(213, 217, 185);
+            text-align : right; 
+            color:black; 
+            font-weight: bolder;
+            font-size:25px;
+            width: 167px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <table border="1" cellspacing="5" id="calculateur" data-first-click="true">
+        <tr rowspan="3">
+            <input type="text" placeholder="0" id="ecran">
+        </tr>
+        <tr >
+            <td class="mr ">mc</td>
+            <td class="mr">m+</td>
+            <td class="mr">m-</td>
+            <td class="mr">mr</td>
+        </tr>
+        <tr>
+            <td class="brown">c</td>
+            <td class="brown">+/-</td>
+            <td class="brown">/</td>
+            <td class="brown">*</td>
+        </tr>
+        <tr>
+            <td id="sept">7</td>
+            <td id="huit">8</td>
+            <td id="neuf">9</td>
+            <td id="moins" class="brown"> - </td>
+        </tr>
+        <tr>
+            <td id="quatre">4</td>
+            <td id="cinq">5</td>
+            <td id="six">6</td>
+            <td id="plus" class="brown" >+</td>
+        </tr>
+        <tr>
+            <td id="un">1</td>
+            <td id="deux">2</td>
+            <td id="trois">3</td>
+            <td rowspan="2" style="background-color: orange;border:orange" id="response"> = </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:left;" id="zero">0</td>
+            <td id="virgule">.</td>
+        </tr>
+    </table> 
+</center>
+  
+<script src="app.js"></script>
+
+</body>
+</html>
